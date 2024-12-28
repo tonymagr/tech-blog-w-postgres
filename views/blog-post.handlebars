@@ -1,0 +1,25 @@
+<section>
+    <h1 class="color-light">The Tech Blog</h1>
+</section>
+
+<section class="card-wide">
+  <header class="space-between">
+    <span>{{blogPost.title}}</span>
+    <span>Posted by {{blogPost.user_name}} on {{ format_date blogPost.post_date }}</span>
+  </header>
+  <section>
+    {{blogPost.contents}}
+  </section>
+</section>
+
+<section class="card-wide height-fixed">
+  {{#if loggedIn}}
+    <a class="color-link margin-text-wide" href="/api/blogs/comment/{{blogPost.id}}">Enter new comment</a>
+  {{else}}
+    <p class="margin-text-wide font-size-normal">Blog Post Comments</p>
+  {{/if}}
+
+  {{#each blogPost.comments as |comment|}}
+    {{> comment-details}}
+  {{/each}}
+</section>

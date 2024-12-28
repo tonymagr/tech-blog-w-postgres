@@ -1,0 +1,33 @@
+<section>
+    <h1 class="color-light">Your Dashboard</h1>
+</section>
+
+{{#if loggedIn}}
+  <section class="card-wide">
+    <header>Create New Post</header>
+    <section class="inner-card-wide">
+      <form class="form" id="new-blog-form">
+        <div class="form-group font-size-normal">
+          <label class="margin-text-extra-wide" for="blog-title">Title</label>
+          <input class="form-input" type="text" id="blog-title" name="blog-title"></input>
+          <label class="margin-text-extra-wide" for="blog-post">Content</label>
+          <textarea class="form-input" type="text" id="blog-post" name="blog-post" rows="6"></textarea>
+        {{!-- </div>
+        <div class="form-group"> --}}
+          <button class="btn btn-primary btn-wide" type="submit">Create</button>
+        </div>
+        {{!-- Hidden section - used for storing passed data - Has to be part of the form --}}
+        <div class="hidden-passed-data">
+          <p id="post-username" class="form-group">{{activeUser}}</p>
+        </div>
+      </form>
+    </section>
+  </section>
+{{else}}
+  <!-- Otherwise, provide a link to login -->
+  <a class="color-link margin-text-wide" href="/api/users/login">Click here to login to enter blog post.</a>
+{{/if}}
+
+{{!-- This sources dashboard-blog-post.js Javascript folder. Relative to express.static 
+declaration for 'public'. --}}
+<script src="/js/new-blog-post.js"></script>
