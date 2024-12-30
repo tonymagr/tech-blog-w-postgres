@@ -9,7 +9,9 @@
     "seed": "node seeds/index.js",
     "watch": "nodemon server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
