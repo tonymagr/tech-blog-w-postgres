@@ -16,15 +16,15 @@ Tony Magrady - Berkeley Full-Stack Web Development Bootcamp student, Fall-Winter
 
 ## Description
 
-This is a content management system (CMS) blog site where developers can publish and manage their blog posts and comment on other developers’ posts. This app follows the Model-View-Controller (MVC) pattern for client requests handled by server routes which access the Sequelize database (connected to Mysql2). Handlebars.js is used as the templating (extended HTML) language. <br>
+This is a content management system (CMS) blog site where developers can publish and manage their blog posts and comment on other developers’ posts. This app follows the Model-View-Controller (MVC) pattern for client requests handled by server routes which access the Sequelize database (connected to PostgreSQL). Handlebars.js is used as the templating (extended HTML) language. <br>
 Two levels of access are provided, described in Usage section.
 
 ## Installation
 
 Required Node.js packages for this application are:
 - Express (web app framework)
-- Mysql2 (database access)
-- Sequelize (object-relational mapping, ORM, of code to MySQL)
+- PostgreSQL (database access)
+- Sequelize (object-relational mapping, ORM, of code to PostgreSQL)
 - Dotenv (manages private environment variables for use in code)
 - Bcrypt (password hashing tool)
 - Express-handlebars (client-side templating language for HTML)
