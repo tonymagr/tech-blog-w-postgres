@@ -16,6 +16,6 @@ const sequelize = new Sequelize(
   }
 );
 
-console.log("connectionString",connectionString);
+console.log("connectionString",sequelize.connectionString);
 
 module.exports = sequelize;
