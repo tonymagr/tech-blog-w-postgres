@@ -12,6 +12,12 @@ const sequelize = new Sequelize(
     host: 'localhost',
     // host: '127.0.0.1',
     dialect: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
+    },
     port: 5432
   }
 );
