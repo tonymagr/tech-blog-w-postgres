@@ -7,7 +7,7 @@ const sequelize = new Sequelize(
   process.env.DATABASE,
   process.env.USER,
   process.env.PASSWORD,
-  process.env.DATABASE_URL, 
+  // process.env.DATABASE_URL, 
   {
     host: 'localhost',
     // host: '127.0.0.1',

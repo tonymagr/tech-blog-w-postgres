@@ -22,16 +22,17 @@
     "express-session": "^1.17.3",
     "node": "^23.5.0",
     "pg": "^8.13.1",
-    "sequelize": "^6.37.5"
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2"
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
     "dialect": "postgres",
     "dialectOptions": {
-     "ssl": {
-       "require": true,
-       "rejectUnauthorized": false
-     }
-   }
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
