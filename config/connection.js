@@ -15,6 +15,10 @@ const sequelize = new Sequelize({
 }
 );
 
+console.log("connectionString :: ",sequelize.connectionString);
+console.log("dialect :: ",sequelize.dialect);
+console.log("process.env.DATABASE_URL :: ",process.env.DATABASE_URL);
+
 sequelize
 .authenticate()
 .then(() => {
