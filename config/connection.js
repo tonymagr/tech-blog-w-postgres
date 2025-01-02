@@ -2,6 +2,7 @@ const Sequelize = require('sequelize');
 require('dotenv').config();
 // const { Client } = require('pg');
 
+// Make connection
 const sequelize = new Sequelize({
   connectionString: process.env.DATABASE_URL,
   dialect: 'postgres',
