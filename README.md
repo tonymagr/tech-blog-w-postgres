@@ -31,7 +31,7 @@ Required Node.js packages for this application are:
 - Express-session (saves and manages session data, including auth data) <br>
 
 CLI server command in repo:  npm run watch <br>
-Client URL for app home page is:  http://localhost:3001/
+Client URL for app home page is:  http://localhost:5432/
 
 ## Usage
 
